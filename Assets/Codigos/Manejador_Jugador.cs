@@ -2,27 +2,40 @@ using System.Collections;
 using System.Collections.Generic;
 using JetBrains.Annotations;
 using Unity.Mathematics;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Manejador_Jugador : MonoBehaviour
 {
-    
     private Rigidbody2D rb2D;
 
-    [Header("Movimiento")]
+    /** Variables que se usaran para poder ejecutar la funcion 
+    * que mueva al personaje
+    */
+
     private float movimientoHorizontal = 0f;
-    [SerializeField] private float velocidadDeMovimiento;
-    [Range(0, 0.3f)][SerializeField] private float suavizadoDeMovimiento;
+    private float velocidadDeMovimiento = 400f;
+    private float suavizadoDeMovimiento = 0.248f;
     private Vector3 velocidad = Vector3.zero;
     private bool mirandoDerecha = true;
 
+
+    /** Variables que se usaran para poder ejecutar la funcion 
+    * que salte el personaje
+    */
+
     [Header("Salto")]
-    [SerializeField] private float fuerzaDeSalto;
+    private float fuerzaDeSalto = 300f;
     [SerializeField] private LayerMask queEsSuelo;
     [SerializeField] private Transform controladorSuelo;
     [SerializeField] private Vector3 dimensionesCaja;
     [SerializeField] private bool enSuelo;
     private bool salto = false;
+
+
+    /** Variables que se usaran para poder ejecutar las
+    * animaciones del personaje
+    */
 
     [Header("Animacion")]
     private Animator animator;
@@ -57,6 +70,10 @@ public class Manejador_Jugador : MonoBehaviour
         salto = false;
     }
 
+
+    /**
+    * Metodo privado que ayudara en interactuar el usuario con el personaje
+    */
     private void Mover(float mover, bool saltar)
     {
         Vector3 velocidadObjetivo = new Vector2(mover, rb2D.velocity.y);
@@ -78,6 +95,11 @@ public class Manejador_Jugador : MonoBehaviour
         }
     }
 
+
+    /**
+    * Metodo privado que gira la orientacion del personaje entre el eje x (negativo y positivo)
+    *
+    */
     private void Girar()
     {
         mirandoDerecha = !mirandoDerecha;
@@ -86,6 +108,10 @@ public class Manejador_Jugador : MonoBehaviour
         transform.localScale = escala;
     }
 
+
+    /**
+    * Metodo privado que ayuda de forma grafica a la hora de reconocer lo que esta pisando el perosnaje
+    */
     private void OnDrawGizmos()
     {
         Gizmos.color = Color.yellow;
