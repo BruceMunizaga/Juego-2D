@@ -13,7 +13,7 @@ public class GameManager : MonoBehaviour
 
     public int PuntosTotales {get; private set;}
 
-	private int vidas = 3;
+	private int vidas = 2;
 
     private void Awake()
     {

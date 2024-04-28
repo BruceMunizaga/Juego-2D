@@ -5,13 +5,22 @@ using UnityEngine;
 public class Respawn : MonoBehaviour
 
 {
-
-    private Vector2 puntoInicio = new Vector2(-28.94f,-4.22f);
+    private int contador = 0;
+    private bool daño = false;
+    private Vector2 puntoInicio = new Vector2(37.4098f,106.5364f);
+    
+    
     void OnTriggerEnter2D(Collider2D collision) {
         if (collision.gameObject.tag == "Enemigo") {
             // El player ha tocado un enemigo
             GameManager.Instance.PerderVida();
-            EjecutarAnimacion();
+            contador++;
+            if(contador == 1){
+                EjecutarAnimacion();
+            }else if(contador == 2){
+                CancelarAnimacion();
+            }
+
             StartCoroutine(ResetearPosicionDespuesDeAnimacion());
         }
     }
@@ -20,13 +29,22 @@ public class Respawn : MonoBehaviour
     }
 
     void EjecutarAnimacion() {
+        this.daño = true;
         // Accede al animador del player
         Animator animator = GetComponent<Animator>();
         // Dispara el estado de animación de daño
-        animator.SetTrigger("Daño"); //FIXME: Agregar la animacion de daño al animator de unity
+        animator.SetBool("Daño",daño); //FIXME: Agregar la animacion de daño al animator de unity
+    }
+
+        void CancelarAnimacion() {
+        this.daño = false;
+        // Accede al animador del player
+        Animator animator = GetComponent<Animator>();
+        // Dispara el estado de animación de daño
+        animator.SetBool("Daño",daño); //FIXME: Agregar la animacion de daño al animator de unity
     }
     IEnumerator ResetearPosicionDespuesDeAnimacion() {
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(1f);
         ResetearPosicion();
     }
 }
