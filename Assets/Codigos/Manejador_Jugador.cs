@@ -14,8 +14,8 @@ public class Manejador_Jugador : MonoBehaviour
     */
 
     private float movimientoHorizontal = 0f;
-    private float velocidadDeMovimiento = 400f;
-    private float suavizadoDeMovimiento = 0.248f;
+    [SerializeField] private float velocidadDeMovimiento;
+    [SerializeField] private float suavizadoDeMovimiento;
     private Vector3 velocidad = Vector3.zero;
     private bool mirandoDerecha = true;
 
@@ -25,7 +25,7 @@ public class Manejador_Jugador : MonoBehaviour
     */
 
     [Header("Salto")]
-    private float fuerzaDeSalto = 300f;
+    [SerializeField] private float fuerzaDeSalto = 1000f;
     [SerializeField] private LayerMask queEsSuelo;
     [SerializeField] private Transform controladorSuelo;
     [SerializeField] private Vector3 dimensionesCaja;
