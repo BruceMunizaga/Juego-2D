@@ -33,6 +33,7 @@ public class Manejador_Jugador : MonoBehaviour
     private bool salto = false;
 
 
+
     /** Variables que se usaran para poder ejecutar las
     * animaciones del personaje
     */
@@ -44,6 +45,7 @@ public class Manejador_Jugador : MonoBehaviour
     {
         rb2D = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
+        
     }
 
     private void Update()
@@ -118,5 +120,6 @@ public class Manejador_Jugador : MonoBehaviour
         Gizmos.color = Color.yellow;
         Gizmos.DrawWireCube(controladorSuelo.position, dimensionesCaja);
     }
+
 }
 

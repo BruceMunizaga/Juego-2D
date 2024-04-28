@@ -6,7 +6,6 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
 
-
     public static GameManager Instance { get; private set; }
     
 	[SerializeField] public HUD hud;
@@ -59,4 +58,5 @@ public class GameManager : MonoBehaviour
 		vidas += 1;
 		return true;
 	}
+
 }
