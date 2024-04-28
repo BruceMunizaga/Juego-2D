@@ -7,7 +7,7 @@ using UnityEngine.PlayerLoop;
 public class Bloque : MonoBehaviour
 {
     [SerializeField] private Transform[] puntosMovimiento;
-    [SerializeField] private float velocidadMovimiento;
+    private float velocidadMovimiento = 50f;
     private int siguienteBloque = 1;
     private bool ordenBloque = true;
 

@@ -7,7 +7,7 @@ public class Respawn : MonoBehaviour
 {
     private int contador = 0;
     private bool daño = false;
-    private Vector2 puntoInicio = new Vector2(37.4098f,106.5364f);
+    private Vector2 puntoInicio = new Vector2(75.6f,-10.7f);
     
     
     void OnTriggerEnter2D(Collider2D collision) {
