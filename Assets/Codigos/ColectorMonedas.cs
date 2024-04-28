@@ -1,14 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ColectorMonedas : MonoBehaviour
 {
-    void OnTriggerEnter2D(Collider2D collision) {
-    if (collision.gameObject.tag == "Moneda") {
-    // El player ha tocado un enemigo
-        Destroy(collision.gameObject);
-        }
+    
+    public int monedas;
 
+    public void agarrar(){
+        monedas += 1;
+        GameManager.Instance.SumarPuntos(monedas);
     }
 }

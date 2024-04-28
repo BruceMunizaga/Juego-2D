@@ -48,6 +48,7 @@ public class Manejador_Jugador : MonoBehaviour
 
     private void Update()
     {
+
         movimientoHorizontal = Input.GetAxisRaw("Horizontal") * velocidadDeMovimiento;
 
         animator.SetFloat("Horizontal", Mathf.Abs(movimientoHorizontal));
@@ -69,6 +70,7 @@ public class Manejador_Jugador : MonoBehaviour
 
         salto = false;
     }
+
 
 
     /**
@@ -94,7 +96,6 @@ public class Manejador_Jugador : MonoBehaviour
             rb2D.AddForce(new Vector2(0f, fuerzaDeSalto));
         }
     }
-
 
     /**
     * Metodo privado que gira la orientacion del personaje entre el eje x (negativo y positivo)

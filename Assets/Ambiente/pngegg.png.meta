@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 93a8265f01d7cd94cbb50fb025d98ea7
+guid: 63cd302789fef584a8fff40d3284f123
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -63,16 +63,16 @@ TextureImporter:
   compressionQualitySet: 0
   textureFormatSet: 0
   ignorePngGamma: 0
-  applyGammaDecoding: 1
+  applyGammaDecoding: 0
   swizzle: 50462976
-  cookieLightType: 1
+  cookieLightType: 0
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -110,13 +110,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Cofre_0
+      name: Corazon
       rect:
         serializedVersion: 2
-        x: 78
-        y: 52
-        width: 128
-        height: 128
+        x: 0
+        y: 0
+        width: 301
+        height: 300
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -124,82 +124,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b5a963ced02d681448411228b977b37c
-      internalID: 2029014285
+      spriteID: 1a592de1f6b646548a411b4018df1ddd
+      internalID: -671177653
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cofre_1
+      name: pngegg_1
       rect:
         serializedVersion: 2
-        x: 226
-        y: 52
-        width: 128
-        height: 133
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8a9f2cc9c38e2e247b8c6be813ceee2a
-      internalID: -275876922
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Cofre_2
-      rect:
-        serializedVersion: 2
-        x: 374
-        y: 52
-        width: 128
-        height: 138
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0c516b1d18e402b4881b7797c75f9c78
-      internalID: -1614289539
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Cofre_3
-      rect:
-        serializedVersion: 2
-        x: 522
-        y: 52
-        width: 128
-        height: 146
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2c26a74c237e78d49a747c9d0351040e
-      internalID: -197363619
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Cofre_4
-      rect:
-        serializedVersion: 2
-        x: 670
-        y: 52
-        width: 128
+        x: 150
+        y: 150
+        width: 150
         height: 150
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -208,20 +145,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cdc0c9aa59e6e224297978675fd1c063
-      internalID: -566314114
+      spriteID: b7b1dfe84aa0d744cae6244646a621e0
+      internalID: 1423363635
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cofre_5
+      name: pngegg_2
       rect:
         serializedVersion: 2
-        x: 818
-        y: 52
-        width: 128
-        height: 152
+        x: 300
+        y: 150
+        width: 150
+        height: 150
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -229,8 +166,197 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e58871b63e0d80f4fa94d7134e7ea92c
-      internalID: 1311505810
+      spriteID: a300769ff68f75b4b875653ef4a70d81
+      internalID: -1150224379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngegg_3
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 150
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f00fdfe278cb4ee48a5f44084c99af3a
+      internalID: 968455272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngegg_4
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 150
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac9adb91adc39bc438741a36da0450b5
+      internalID: 1281877458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngegg_5
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 150
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b00c2982282b96e42bc45f1c0c65c161
+      internalID: 1698079775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngegg_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55a0c394b55ead64abbcdf0ddfbcde88
+      internalID: 2069478821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngegg_7
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 0
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eea03f2accf6e7d4488a9d49d81aeed3
+      internalID: 1933059859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngegg_8
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 0
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfd52fdf5c3a14a46b10ba2bf2e6e69f
+      internalID: -1717653221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngegg_9
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 0
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a07888692798b14ebb69ff58b108425
+      internalID: 364356343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngegg_10
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 0
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a5fd2a3ec1619c44bfee7c12a3074e8
+      internalID: 1098740079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngegg_11
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 0
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f54a5c7908f348f4e8db241482a20dc5
+      internalID: 1734578893
       vertices: []
       indices: 
       edges: []
@@ -238,7 +364,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: e93fdcb3d01811245a4d200b050a8376
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -246,12 +372,18 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Cofre_0: 2029014285
-      Cofre_1: -275876922
-      Cofre_2: -1614289539
-      Cofre_3: -197363619
-      Cofre_4: -566314114
-      Cofre_5: 1311505810
+      Corazon: -671177653
+      pngegg_1: 1423363635
+      pngegg_10: 1098740079
+      pngegg_11: 1734578893
+      pngegg_2: -1150224379
+      pngegg_3: 968455272
+      pngegg_4: 1281877458
+      pngegg_5: 1698079775
+      pngegg_6: 2069478821
+      pngegg_7: 1933059859
+      pngegg_8: -1717653221
+      pngegg_9: 364356343
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
