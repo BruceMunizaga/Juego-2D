@@ -22,26 +22,26 @@ AnimationClip:
     curve:
     - time: 0
       value: {fileID: 21300000, guid: d979152ce22651744a98cbf914e4728e, type: 3}
-    - time: 0.05
-      value: {fileID: 21300000, guid: ce90fa3cd394c7440b50faf8c00f7f2a, type: 3}
-    - time: 0.1
-      value: {fileID: 21300000, guid: 9b9761aa499d5de489e93e1a1ab5004e, type: 3}
-    - time: 0.15
-      value: {fileID: 21300000, guid: b1187581d7a8c8746badfb9d6c2b1ecb, type: 3}
-    - time: 0.2
-      value: {fileID: 21300000, guid: a973f1a6984346b43beaa3a22b1bf574, type: 3}
-    - time: 0.25
-      value: {fileID: 21300000, guid: 7cec49c8f264e3341beca368c92d8c98, type: 3}
     - time: 0.3
+      value: {fileID: 21300000, guid: ce90fa3cd394c7440b50faf8c00f7f2a, type: 3}
+    - time: 0.6
+      value: {fileID: 21300000, guid: 9b9761aa499d5de489e93e1a1ab5004e, type: 3}
+    - time: 0.9
+      value: {fileID: 21300000, guid: b1187581d7a8c8746badfb9d6c2b1ecb, type: 3}
+    - time: 1.2
+      value: {fileID: 21300000, guid: a973f1a6984346b43beaa3a22b1bf574, type: 3}
+    - time: 1.5
+      value: {fileID: 21300000, guid: 7cec49c8f264e3341beca368c92d8c98, type: 3}
+    - time: 1.8
       value: {fileID: 21300000, guid: 05709dbde300d7b4db8353eb5172308f, type: 3}
-    - time: 0.35
+    - time: 2.1
       value: {fileID: 21300000, guid: 2260c07b4ce10604c98691da80964b55, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
     script: {fileID: 0}
     flags: 2
-  m_SampleRate: 20
+  m_SampleRate: 10
   m_WrapMode: 0
   m_Bounds:
     m_Center: {x: 0, y: 0, z: 0}
@@ -71,12 +71,12 @@ AnimationClip:
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.4
+    m_StopTime: 2.1999998
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
     m_HasAdditiveReferencePose: 0
-    m_LoopTime: 0
+    m_LoopTime: 1
     m_LoopBlend: 0
     m_LoopBlendOrientation: 0
     m_LoopBlendPositionY: 0
@@ -90,4 +90,11 @@ AnimationClip:
   m_EulerEditorCurves: []
   m_HasGenericRootTransform: 0
   m_HasMotionFloatCurves: 0
-  m_Events: []
+  m_Events:
+  - time: 0
+    functionName: 
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0

@@ -14,6 +14,7 @@ public class Manejador_Jugador : MonoBehaviour
     */
 
     private float movimientoHorizontal = 0f;
+    private bool deslizar = false;
     [SerializeField] private float velocidadDeMovimiento;
     [SerializeField] private float suavizadoDeMovimiento;
     private Vector3 velocidad = Vector3.zero;
@@ -50,7 +51,15 @@ public class Manejador_Jugador : MonoBehaviour
 
     private void Update()
     {
-
+        if (Input.GetKey(KeyCode.S))
+        {
+            // Código a ejecutar mientras se presiona "S"
+            // Por ejemplo, mover al jugador hacia abajo
+            this.deslizar = true;
+        }else{
+            this.deslizar = false;
+        }
+        animator.SetBool("Deslizar",this.deslizar);
         movimientoHorizontal = Input.GetAxisRaw("Horizontal") * velocidadDeMovimiento;
 
         animator.SetFloat("Horizontal", Mathf.Abs(movimientoHorizontal));
