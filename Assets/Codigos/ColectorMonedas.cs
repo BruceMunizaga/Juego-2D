@@ -13,4 +13,8 @@ public class ColectorMonedas : MonoBehaviour
         monedas += 1;
         GameManager.Instance.SumarPuntos(monedas);
     }
+
+    public int Enviarmonedas(){
+        return this.monedas;
+    }
 }

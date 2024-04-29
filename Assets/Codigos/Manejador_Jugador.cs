@@ -9,10 +9,11 @@ public class Manejador_Jugador : MonoBehaviour
 {
     private Rigidbody2D rb2D;
 
+
     /** Variables que se usaran para poder ejecutar la funcion 
     * que mueva al personaje
     */
-
+    public static Manejador_Jugador Instance;
     private float movimientoHorizontal = 0f;
     private bool deslizar = false;
     [SerializeField] private float velocidadDeMovimiento;

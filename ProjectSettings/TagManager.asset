@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Moneda
   - Enemigo
+  - BloqueCaer
   layers:
   - Default
   - TransparentFX

@@ -27,6 +27,8 @@ public class Bloque : MonoBehaviour
             }
         }
 
+        
+
         transform.position = Vector2.MoveTowards(transform.position, puntosMovimiento[siguienteBloque].position, 
         velocidadMovimiento * Time.deltaTime);
     }
