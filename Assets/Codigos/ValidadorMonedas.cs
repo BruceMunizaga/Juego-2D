@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ValidadorMonedas : MonoBehaviour
 {
@@ -16,11 +17,18 @@ public class ValidadorMonedas : MonoBehaviour
     void OnTriggerEnter2D(Collider2D collision) {
     if (collision.CompareTag ("Player")) {
         monedas = collision.gameObject.GetComponent<ColectorMonedas>().Enviarmonedas(); 
-        if(monedas == 14){
+        if(monedas == 1){
             abrir = true;
             animator.SetBool("AbrirCofre", abrir);
+            StartCoroutine(CambiarEscena());            
         }
         }
 
     }
+        IEnumerator CambiarEscena() {
+        yield return new WaitForSeconds(1f);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+       ;
+    }
+
 }
