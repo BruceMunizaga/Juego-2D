@@ -17,7 +17,7 @@ public class ValidadorMonedas : MonoBehaviour
     void OnTriggerEnter2D(Collider2D collision) {
     if (collision.CompareTag ("Player")) {
         monedas = collision.gameObject.GetComponent<ColectorMonedas>().Enviarmonedas(); 
-        if(monedas == 1){
+        if(monedas == 14){
             abrir = true;
             animator.SetBool("AbrirCofre", abrir);
             StartCoroutine(CambiarEscena());            
